@@ -47,6 +47,7 @@ const TodosProductos = () => {
                                 <td>
                                     <Link to={`/producto/${producto._id}`} className="btn btn-primary">Detalle</Link>
                                     <button className="btn btn-danger" onClick={()=>borrarProducto(producto._id)}>Borrar</button>
+                                    <Link to={`/update/${producto._id}`} className="btn btn-success">Actualizar</Link>
                                 </td>
                             </tr>
                         ))
